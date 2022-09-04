@@ -18,6 +18,10 @@
     .right-section .icn .menu-icon{
         display: none;
     }
+
+    .left-sidebar{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {

@@ -158,6 +158,109 @@ input:focus{
 
 
 
+/* Body  */
 
 
+.left-sidebar{
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 25%;
+    height: 90vh;
+}
+
+::-webkit-scrollbar{
+    width: .75rem;
+    
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    width: 0.75rem;
+
+}
+
+.li a{
+display: flex;
+width: 36px;
+border-radius: 19px;
+width: 240px;
+padding-bottom: 10px;
+text-decoration: none;
+}
+
+.li a:hover{
+    background: lightgray;
+    border-radius: none;
+}
+
+ul{
+   list-style-type: none;
+}
+
+.li a img{
+    width: 35px;
+    border-radius: 21px;
+}
+
+.left-itms{
+    padding-top: 23px;
+    padding-left: 15px;
+    width: 20px;
+}
+
+ul li div{
+    padding-top: 11px;
+    padding-left: 12px;
+    color: black;
+    
+}
+
+.shortcuts{
+    width: 260px;
+}
+
+.shortcuts .heading{
+    display: flex;
+}
+
+.shortcuts .heading button{
+    margin-left: 166px;
+}
+
+.shortcuts .heading{
+    margin-top: 12px;
+}
+
+.shortcuts .heading button{
+    border: none;
+    color: blue;
+   
+}
+
+.shortcuts .heading button:hover{
+   
+    background: lightgray;
+    padding: 3px;
+}
+
+#more {display: none;}
+
+#myBtn{
+    width: 79px;
+    height: 22px;
+    background: none;
+    border: none;
+}
+
+#dots{
+    display: none;
+}
 
