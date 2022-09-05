@@ -264,3 +264,133 @@ ul li div{
     display: none;
 }
 
+.main{
+    background: RGB(240, 242, 245);
+    display: flex;
+}
+
+/* middle-section  */
+
+.middle{
+    width: 50%;
+}
+
+
+/* right-section  */
+
+.right-section{
+    margin-left: 27px;
+
+}
+
+.right-section .profile-page .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.right-section .profile-page .heading p{
+    font-size: 17px;
+}
+
+.right-section .profile-page .heading i{
+    margin-left: 93px;
+    font-size: 23px;
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.page img{
+    border-radius: 25px;
+    height: 50px;
+}
+
+.page p{
+    padding-right: 126px;
+    padding-top: 17px;
+}
+
+.notifications {
+    display: flex;
+    padding-left: 30px;
+}
+
+.notifications i{
+    font-size: 25px;
+}
+
+.notifications p{
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.Create{
+    padding-top: 10px;
+}
+
+.right-section .profile-page hr{
+    margin-top: 21px;
+}
+
+.birthday{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.birthday i{
+    font-size: 29px;
+}
+
+.birthday p{
+    padding-right: 84px;
+}
+
+.bh{
+    font-size: 19px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+.contact .li{
+    font-size: 17px;
+}
+
+
+
+
+.scroller{
+    overflow-y: scroll;
+    height: 593px;
+}
+
+::-webkit-scrollbar{
+    width: .75rem;
+    
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    width: 0.75rem;
+
+}

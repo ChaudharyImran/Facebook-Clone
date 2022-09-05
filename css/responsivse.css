@@ -18,11 +18,8 @@
     .right-section .icn .menu-icon{
         display: none;
     }
-
-    .left-sidebar{
-        display: none;
     }
-}
+
 
 @media screen and (max-width: 800px) {
     .icons .mid{
@@ -39,6 +36,21 @@
     display: none;
 }
 }
+
+@media screen and (max-width: 900px) {
+    .right-section{
+        display: none;
+    }
+    .right-section .icn{
+        display: block;
+    }
+}
+
+
+
+ 
+
+
 
 
 
