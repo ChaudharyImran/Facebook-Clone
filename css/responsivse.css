@@ -11,25 +11,15 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .right-section .icn .plus-icon{
+    .container .row .right-section .icn .plus-icon{
         display: block;
-        margin-right: -14px;
     }
-    .right-section .icn .menu-icon{
+
+    .container .row .right-section .icn .menu-icon{
         display: none;
     }
     }
 
-
-@media screen and (max-width: 800px) {
-    .icons .mid{
-        font-size: 22px;
-    }
-
-    .icons{
-        margin-left: 78px;
-    }
-    }
 
 @media screen and (max-width: 700px) {
 .icons{
@@ -37,14 +27,7 @@
 }
 }
 
-@media screen and (max-width: 900px) {
-    .right-section{
-        display: none;
-    }
-    .right-section .icn{
-        display: block;
-    }
-}
+
 
 
 

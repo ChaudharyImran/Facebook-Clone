@@ -1,19 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* Nav Bar  */
 .container{
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .row{
-    margin-top: 11px;
+    padding-top: 10px;
 }
 
   .logo{
@@ -71,17 +84,30 @@ input:focus{
 }
 
   .icons{
-    font-size: 26px;
     display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
 }
 
-  .icons i{
-    padding-right: 60px;
-    padding-left: 21px;
-    padding-top: 7px;
-    padding-right: 22px;
-    padding-bottom: 15px;
+.icons .mid{
+    padding: 7px 33px;
+    padding-top: 15px;
+    border-radius: 8px;
 }
+
+.icons .mid img{
+     width: 28px;
+     height: 28px;
+}
+
+.icons .mid:hover{
+    background: lightgray;
+
+
+}
+
+
 
   .icons i:hover{
      background: lightgray;
@@ -90,19 +116,14 @@ input:focus{
 }
 .icn{
     justify-content: space-evenly;
-    margin-right: 20px;
 }
 
-.right-section .icn .plus-icon{
-    display: none;
-}
+
 
 .icn img{
-    
-    height: 42px;
-    border-radius: 21px;
-    margin-right: 15px;
     display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 .icn img{
@@ -112,11 +133,72 @@ input:focus{
 .right-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.right-section-bar .profile-page{
+   margin-top: 12px;
+
+}
+
+.right-section-bar .profile-page .hhhhh h4{
+     color: gray;
+     font-size: 15px;
+     margin-bottom: 10px;
+}
+
+.right-section-bar .profile-page .sponserd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.right-section-bar .profile-page .sponserd .texxt{
+    margin-right: 76px;
+}
+
+.right-section-bar .profile-page .sponserd .texxt h3{
+    font-size: 22px;
+}
+
+.right-section-bar .profile-img .sponserd .texxt a{
+    color: black;
+    font-size: 13px;
+}
+
+
+
+.container .row .right-section .icn .right img{
+    width: 20px;
+    height: 20px;
+}
+
+.container .row .right-section .icn .right{
+    padding: 9px 10px;
+    background: lightgray;
+    border-radius: 36px;
+    margin-right: 8px;
+}
+
+.container .row .right-section .icn .plus-icon{
+    display: none;
+}
+
+.container .row .right-section .icn .right:hover{
+    background: rgb(193, 191, 191);
+}
+
+.container .row .right-section .account-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 36px;
 }
 
 .nav-1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -132,9 +214,7 @@ input:focus{
     background: rgb(180, 180, 180);
 }
 
-.right-section{
-    padding-left: 12px;
-}
+
 
 .icn{
     display: flex;
@@ -164,8 +244,8 @@ input:focus{
 .left-sidebar{
     overflow: scroll;
     overflow-x: hidden;
-    width: 25%;
-    height: 90vh;
+    width: 290px;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar{
@@ -189,16 +269,14 @@ input:focus{
 
 .li a{
 display: flex;
-width: 36px;
-border-radius: 19px;
-width: 240px;
+width: 100%;
 padding-bottom: 10px;
-text-decoration: none;
+padding: 7px 4px;
+border-radius: 9px;
 }
 
 .li a:hover{
     background: lightgray;
-    border-radius: none;
 }
 
 ul{
@@ -206,33 +284,70 @@ ul{
 }
 
 .li a img{
-    width: 35px;
+   width: 28px;
+   height: 28px;
     border-radius: 21px;
 }
 
 .left-itms{
     padding-top: 23px;
     padding-left: 15px;
-    width: 20px;
+}
+
+.left-itms .profile-img{
+    width: 100%;
+}
+
+.left-itms .profile-img a{
+   display: flex;
+   align-items: center;
+   padding: 7px 4px;
+}
+
+.left-itms .profile-img a:hover{
+background: lightgray;
+border-radius: 7px;
+}
+
+.left-itms .profile-img a div{
+    margin-left: 10px;
+    color: black;
+}
+
+
+
+.left-itms .profile-img  img{
+    height: 28px;
+    width: 28px;
+    border-radius: 30px;
 }
 
 ul li div{
-    padding-top: 11px;
+    padding-top: 5px;
     padding-left: 12px;
     color: black;
     
 }
 
-.shortcuts{
-    width: 260px;
+
+.shortcuts:hover .edit{
+  display: block;
+  margin-right: 8px;
 }
 
 .shortcuts .heading{
     display: flex;
+    justify-content: space-between;
+}
+
+.shortcuts .heading p{
+    font-size: 13px;
+    color: gray;
 }
 
 .shortcuts .heading button{
-    margin-left: 166px;
+   display: none;
+    background: none;
 }
 
 .shortcuts .heading{
@@ -245,82 +360,148 @@ ul li div{
    
 }
 
-.shortcuts .heading button:hover{
-   
-    background: lightgray;
-    padding: 3px;
+.ul-ul .li .href{
+    align-items: center
 }
 
-#more {display: none;}
 
-#myBtn{
-    width: 79px;
-    height: 22px;
-    background: none;
-    border: none;
+
+.ul-ul .li .href img {
+   width: 28px;
+   height: 28px;
+   border-radius: 0px;
 }
+
+
+.privecy-term{
+    margin-top: 12px;
+color: gray;
+    font-size: 11px;
+}
+.privecy-term:hover{
+    text-decoration: underline;
+}
+
+
+
+#more {
+    display: none;
+}
+
+
+
+
 
 #dots{
     display: none;
 }
 
 .main{
-    background: RGB(240, 242, 245);
     display: flex;
+}
+body{
+    background: RGB(240, 242, 245);
 }
 
 /* middle-section  */
 
 .middle{
     width: 50%;
+    background: white;
+    margin-top: 40px;
+    border-radius: 15px;
+    height: 375px;
+    margin-left: 30px;
+    overflow-y: hidden;
+}
+.middle hr{
+    margin-top: 22px;
+}
+
+.middle .headings{
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 21px;
+}
+
+
+.hd{
+    overflow: hidden;
+}
+
+.hd a{
+    text-decoration: none;
+    color: black;
+    padding: 18px;
+    border-radius: 11px;
+}
+
+.hd a:hover{
+    background: lightgray;
 }
 
 
 /* right-section  */
 
-.right-section{
-    margin-left: 27px;
-
+.right-section-bar{
+    margin-left: 81px;
+    overflow: hidden;
+   width: 350px;
+    margin-top: 10px;
 }
 
-.right-section .profile-page .heading {
+.right-section-bar .profile-page .heading {
     display: flex;
     justify-content: space-between;
     margin-top: 17px;
+    border-top: 1px solid lightgray;
 }
 
-.right-section .profile-page .heading p{
-    font-size: 17px;
+.right-section-bar .profile-page .heading h4{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
-.right-section .profile-page .heading i{
-    margin-left: 93px;
-    font-size: 23px;
+.right-section-bar .profile-page .heading i{
+    padding-right: 23px;
+    font-size: 18px;
+   border-radius: 24px;
+   padding: 7px 7px;
+}
+
+.right-section-bar .profile-page .heading i:hover{
+    background: lightgray;
 }
 
 .page{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+  align-items: center;
 }
 
 .page img{
-    border-radius: 25px;
-    height: 50px;
+    border-radius: 23px;
+   width: 28px;
+   height: 28px;
 }
 
 .page p{
-    padding-right: 126px;
-    padding-top: 17px;
+    padding-right: 206px;
+   color: black;
+   
+  
 }
 
 .notifications {
     display: flex;
     padding-left: 30px;
+    margin: 10px 1px;
 }
 
-.notifications i{
-    font-size: 25px;
+.notifications img{
+    width: 20px;
+    height: 20px;
 }
 
 .notifications p{
@@ -328,26 +509,54 @@ ul li div{
     padding-left: 12px;
 }
 
-.Create{
-    padding-top: 10px;
+.notifications-Create{
+    display: flex;
+    padding-left: 30px;
+    margin: 10px 1px;
 }
 
-.right-section .profile-page hr{
-    margin-top: 21px;
+.notifications-Create img{
+    width: 20px;
+    height: 20px;
 }
+
+.notifications-Create p{
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.bh{
+    justify-content: space-between;
+    display: flex;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-top: 1px solid lightgray;
+}
+
 
 .birthday{
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
+    padding: 5px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
 }
 
-.birthday i{
-    font-size: 29px;
+.birthday:hover{
+    background: lightgray;
+}
+
+.birthday img{
+    width: 28px;
+    height: 28px;
 }
 
 .birthday p{
-    padding-right: 84px;
+    margin-right: 85px;
+    padding-left: 10px;
 }
 
 .bh{
@@ -358,16 +567,25 @@ ul li div{
     display: flex;
     justify-content: space-between;
     padding-top: 11px;
+    align-items: center;
 }
 
-.contact p{
-    font-size: 20px;
+.contact h4{
+    font-size: 19px;
+    color: gray;
 }
 
-.contact .li{
-    font-size: 17px;
+.contact i{
+    color: gray;
+    padding-right: 23px;
+    font-size: 15px;
+    border-radius: 24px;
+    padding: 7px 7px;
 }
 
+.contact i:hover{
+    background: lightgray;
+}
 
 
 
@@ -394,3 +612,219 @@ ul li div{
     width: 0.75rem;
 
 }
+
+.contact .li{
+    font-size: 17px;
+    position: relative;
+}
+
+
+
+/* .middle-section */
+.middle .headings{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 47px;
+    margin-left: 55px;
+}
+
+
+/* .stories section  */
+
+
+
+.middle .stories-section{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.middle .stories-section .create-story{
+    height: 257px;
+   
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 0 1px rgb(237, 236, 236), 0 1px 1px rgb(21, 21, 21);
+}
+
+
+.middle .stories-section .create-story img{
+    height: 200px;
+    width: 130px;
+    border-radius: 7px;
+}
+
+.middle .stories-section .create-story img:hover{
+    transform: scale(.99);
+    background-blend-mode: lighten;
+}
+
+.middle .stories-section .create-story i{
+    background: blue;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 27px;
+    position: absolute;
+    top: 180px;
+    left: 48px;
+    color: white;
+    border: 3px solid white;
+}
+
+.middle .stories-section .create-story p{
+    position: absolute;
+    top: 233px;
+    left: 41px;
+    font-size: 13px;
+}
+
+.middle .stories-section .story img{
+    height: 259px;
+    width: 130px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+
+.middle .stories-section .story:hover img{
+    transform: scale(.98);
+    background-blend-mode: lighten;
+}
+
+.middle .stories-section .storyes{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+
+}
+
+
+.storyes .story{
+position: relative;
+display: flex;
+justify-content: space-between;
+margin-left: 15px;
+}
+
+.storyes .story .user-img img{
+    height: 40px;
+    width: 40px;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    border-radius: 25px;
+    border: 4px solid blue;
+ 
+  
+}
+
+.story p{
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+    color: black;
+}
+
+.move i{
+    position: absolute;
+    font-size: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 50px;
+    right: -3px;
+    top: 88px;
+    
+}
+
+.move i:hover{
+    background: lightgray;
+}
+
+.stories-2{
+    display: flex;
+}
+
+
+
+.main .middle .tweet-section{
+    margin-top: 44px;
+    background: white;
+    border-radius: 15px;
+}
+
+.main .middle .tweet-section .heead{
+    display: flex;
+    padding-top: 15px;
+    padding-left: 14px;
+    
+}
+
+.main .middle .tweet-section .heead img{
+    height: 60px;
+    margin-right: 12px;
+    margin-top: 8px;
+    padding-bottom: 9px;
+    border-radius: 49px;
+}
+
+.main .middle .tweet-section .heead input{
+    background: lightgray;
+    width: 80%;
+    height: 30px;
+    border-radius: 39px;
+    border-radius: 71px;
+    margin-top: 15px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.main .middle .tweet-section hr{
+    margin-top: 4px;
+    color: rgb(230, 226, 226);
+    height: 1px;
+}
+
+.main .middle .tweet-section .post-option{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 13px;
+    padding-bottom: 20px;
+
+}
+
+.main .middle .tweet-section .post-option .post{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main .middle .tweet-section .post-option .post i{
+    font-size: 35px;
+}
+
+.main .middle .tweet-section .post-option .post p{
+    font-size: 15px;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.main .middle .tweet-section .post-option .live-video i{
+    color: RGB(243, 66, 95);
+}
+
+.main .middle .tweet-section .post-option .photo-video i{
+   color: RGB(65, 179, 93);
+}
+
+.main .middle .tweet-section .post-option .feelings i{
+    color: RGB(234, 176, 38);
+}
+
+.
+
+
+
