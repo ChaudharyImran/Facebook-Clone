@@ -8,6 +8,9 @@
     .search-bar{
         display: none;
     }
+    .icons{
+        margin-right: 0;
+    }
 
 }
 
