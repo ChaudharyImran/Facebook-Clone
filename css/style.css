@@ -14,6 +14,11 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.cnt{
+  width: auto;
+    margin-right: auto;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -44,8 +49,9 @@ nav{
    width: 18rem;
    height: 3rem;
    border-radius: 30px;
-   background: rgb(236, 234, 234);
-   border: none;   
+   background: #f0f2f5;
+   border: none; 
+   margin-left: 10px;  
 }
 
 .little-searchbar i{
@@ -54,7 +60,7 @@ nav{
 }
 
 .little-searchbar i{
-    background: lightgray;
+    background: #f0f2f5;
     padding: 10px;
     border-radius: 32px;
    padding-top: 9px;
@@ -100,23 +106,14 @@ input:focus{
     margin-left: 37px;
 }
 
-.icons .mid img{
+
+.icons .mid i svg{
      width: 28px;
      height: 28px;
 }
 
 .icons .mid:hover{
-    background: lightgray;
-
-
-}
-
-
-
-  .icons i:hover{
-     background: lightgray;
-
-     border-radius: 5px;
+    background: #f0f2f5;
 }
 .icn{
     justify-content: space-evenly;
@@ -124,13 +121,13 @@ input:focus{
 
 
 
-.icn img{
+.icn i svg{
     display: flex;
     width: 20px;
     height: 20px;
 }
 
-.icn img{
+.icn i svg{
     display: flex;
 }
 
@@ -143,7 +140,6 @@ input:focus{
 .right-section-bar .profile-page{
    margin-top: 12px;
    width: 330px;
-
 }
 
 .right-section-bar .profile-page .hhhhh h4{
@@ -158,40 +154,54 @@ input:focus{
     align-items: center;
 }
 
+.right-section-bar .profile-page .sponserd:hover{
+    background: #e4e6eb;
+}
+
 
 .right-section-bar .profile-page .sponserd .texxt{
     margin-right: 76px;
 }
 
 .right-section-bar .profile-page .sponserd .texxt h3{
-    font-size: 22px;
+    color: #9d9e9e;
 }
 
 .right-section-bar .profile-img .sponserd .texxt a{
-    color: black;
-    font-size: 13px;
+   color: black;
 }
 
 
 
-.container .row .right-section .icn .right img{
+.container .row .right-section .icn .right i{
     width: 20px;
     height: 20px;
 }
 
 .container .row .right-section .icn .right{
     padding: 9px 10px;
-    background: lightgray;
+    background: #f0f2f5;
     border-radius: 36px;
     margin-right: 8px;
 }
 
-.container .row .right-section .icn .plus-icon{
+.container .row .right-section .icn .plus-icon {
     display: none;
+
+}
+
+.container .row .right-section .icn .plus-icon i svg{
+    width: 20px;
+    height: 20px;
+}
+
+.container .row .right-section .icn .menu-icon i svg{
+  width: 20px;
+  height: 20px;
 }
 
 .container .row .right-section .icn .right:hover{
-    background: rgb(193, 191, 191);
+    background: #e9ecee;
 }
 
 .container .row .right-section .account-img img{
@@ -233,6 +243,8 @@ input:focus{
 .row{
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .container{
@@ -244,6 +256,13 @@ input:focus{
 
 
 
+
+
+
+
+
+
+
 /* Body  */
 
 
@@ -252,20 +271,38 @@ input:focus{
     position: fixed;
 }
 
+
+.main .left-sidebar ul  .see_more,
+.main .left-sidebar ul  .see_Less.active{
+    display: flex;
+    align-items: center;
+}
+
+.overflow-btn, .see_Less{
+    display: none;
+}
+.overflow-btn.active, .see_Less.active{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 .scroller{
     overflow-y: scroll;
-    height: 80vh;
+    height: 85vh;
 }
 #scroll::-webkit-scrollbar-track
   {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    
       border-radius: 30px;
-      background-color: #F5F5F5;
+      background-color: #f0f2f5;
   }
   
   #scroll::-webkit-scrollbar
   {
-      width: 6px;
+      width: 8px;
       background-color: #F5F5F5;
       display: none;
   }
@@ -279,36 +316,11 @@ input:focus{
   
   #scroll::-webkit-scrollbar-thumb
   {
-      border-radius: 30px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #8f8f8f;
+      border-radius: 20px;
+ 
+      background-color: rgb(190, 187, 187);
   }
 
-/* .left-sidebar{
-   height: 80vh;
-}
-.left-sidebar:hover::-webkit-scrollbar{
-    display: block;
-}
-
-::-webkit-scrollbar{
-    width: .75rem;
-    
-
-}
-
-::-webkit-scrollbar-track{
-    background-color: lightgray;
-    border-radius: 20px;
-    margin-top: 12px;
-
-}
-
-::-webkit-scrollbar-thumb{
-    background: gray;
-    width: 0.75rem;
-
-} */
 
 .li a{
 display: flex;
@@ -317,9 +329,34 @@ padding-bottom: 10px;
 padding: 7px 4px;
 border-radius: 9px;
 }
+.see-icon{
+    display: flex;
+width: 100%;
+padding: 7px 4px;
+border-radius: 9px;
+align-items: center;
+cursor: pointer;
+}
+
+.see-icon:hover{
+    background: #e4e6eb;
+}
+
+.see-icon i{
+    width: 28px;
+    height: 28px;
+     border-radius: 21px;
+     background-color: lightgray;
+     padding: 8px;
+     font-size: 12px;
+     margin-right: 12px;
+}
+.see-icon h4{
+    font-weight: 500;
+}
 
 .li a:hover{
-    background: lightgray;
+    background: #e4e6eb;
 }
 
 ul{
@@ -348,7 +385,7 @@ ul{
 }
 
 .left-itms .profile-img a:hover{
-background: lightgray;
+background: #e4e6eb;
 border-radius: 7px;
 }
 
@@ -421,8 +458,13 @@ ul li div{
 color: gray;
     font-size: 11px;
 }
-.privecy-term:hover{
+.privecy-term p:hover{
     text-decoration: underline;
+}
+
+.privecy-term a:hover{
+    text-decoration: none;
+    background: gold;
 }
 
 
@@ -459,12 +501,13 @@ body{
 
 .middle{
     width: 499px;
-    border-radius: 15px;
+    border-radius: 10px;
     justify-content: space-between;
 }
 
 .middle .stories-1{
     background: white;
+   border-radius: 10px;
 }
 
 
@@ -483,7 +526,7 @@ body{
 }
 
 .hd:hover{
-    background: lightgray;
+    background: #e4e6eb;
 }
 
 
@@ -594,11 +637,11 @@ right: 0;
 }
 
 .birthday:hover{
-    background: lightgray;
+    background: #e4e6eb;
 }
 
 .birthday img{
-    width: 28px;
+    width: 37px;
     height: 28px;
 }
 
@@ -614,7 +657,6 @@ right: 0;
 .contact{
     display: flex;
     justify-content: space-between;
-    padding-top: 11px;
     align-items: center;
 }
 
@@ -623,53 +665,36 @@ right: 0;
     color: gray;
 }
 
-.contact i{
-    color: gray;
-    padding-right: 23px;
-    font-size: 15px;
-    border-radius: 24px;
-    padding: 7px 7px;
+.contact .iicn{
+   display: flex;
 }
 
-.contact i:hover{
+.contact .iicn .i{
+    margin-right: 25px;
+    margin-top: 10px;
+   display: flex;
+   padding: 6px 8px;
+   border-radius: 41px;
+}
+
+
+.contact .iicn .i:hover{
     background: lightgray;
 }
 
 
 
-/* .scroller{
-    overflow-y: scroll;
-    height: 85vh;
-}
-
-.right-section-bar:hover::-webkit-scrollbar{
-display: block;
-}
-
-::-webkit-scrollbar{
-    width: .75rem;
-    
-
-}
-
-::-webkit-scrollbar-track{
-    background-color: lightgray;
-    border-radius: 20px;
-    margin-top: 12px; 
-       display: none;
-
-
-}
-
-::-webkit-scrollbar-thumb{
-    background: gray;
-    width: 0.75rem;
-
-} */
-
 .contact .li{
     font-size: 17px;
     position: relative;
+}
+
+.ull .lii span{
+   font-size: 7px;
+   color: #31a24c;
+   position: absolute;
+   left: 24px;
+   top: 436px;
 }
 
 
@@ -745,6 +770,7 @@ display: block;
 .middle .stories-section .story:hover img{
     transform: scale(.98);
     background-blend-mode: lighten;
+    transition: all .2s;
 }
 
 .middle .stories-section .storyes{
@@ -781,16 +807,7 @@ margin-left: 7px;
    color: white;
 }
 
-.move i{
-    position: absolute;
-    font-size: 40px;
-    background: white;
-    padding: 20px;
-    border-radius: 50px;
-    right: -3px;
-    top: 88px;
-    
-}
+
 
 .move i:hover{
     background: lightgray;
@@ -845,18 +862,22 @@ margin-left: 7px;
 .main .middle .tweet-section .post-option{
     display: flex;
     justify-content: space-between;
-    margin: 0 33px;
-    border-top: 1px solid lighgray;
-    margin: 19px 12px;
-
+    padding: 2px 40px;
+    margin-bottom: 15px;
 }
 
 .main .middle .tweet-section .post-option .post{
     display: flex;
     justify-content: space-between;
-    background: white;
-    margin-top: 23px;
+    padding: 10px 10px;
+   align-items: center;
+   border-radius: 5px;
+   cursor: pointer;
+}
 
+.main .middle .tweet-section .post-option .post:hover{
+    background: #f0f2f5;
+    transition: all .3s;
 }
 
 .main .middle .tweet-section .post-option .post img{
@@ -908,6 +929,24 @@ margin-left: 7px;
     justify-content: space-around;
     align-items: center;
    overflow-y: hidden;
+   position: relative;
+}
+
+.middle-section .post-section .posts .post .head .left img{
+    width: 38px;
+    height: 38px;
+    border-radius: 41px;
+}
+
+.middle-section .post-section .posts .post .head .left .duration{
+    position: absolute;
+    left: 45px;
+    top: 17px;
+    fill: #65676b;
+}
+
+.middle-section .post-section .posts .post .head .left .duration div:hover{
+   text-decoration: underline;
 }
 
 .middle-section .post-section .posts .post .head .left a{
@@ -917,21 +956,32 @@ margin-left: 7px;
     color: black;
 }
 
+.middle-section .post-section .posts .post .head .left a:hover{
+   text-decoration: underline;
+}
+
 .middle-section .post-section .posts .post .head .left a img{
     width: 12px;
     height: 10px;
 }
 
+.middle-section .post-section .posts .post .head .right{
+    margin-right: 15px;
+    margin-right: 15px;
+    padding: 3px 5px;
+    border-radius: 61px;
+    align-items: center;
+}
+
+.middle-section .post-section .posts .post .head .right:hover{
+    background: #f0f2f5;
+}
+
 .middle-section .post-section .posts .post .head .right i{
-   padding: 6px 6px;
    border-radius: 18px;
+
+   align-items: center;
 }
-
-.middle-section .post-section .posts .post .head .right i:hover{
-    background: lightgray;
-}
-
-
 
 .middle-section .post-section .posts .post .head img{
    width: 40px;
@@ -944,11 +994,15 @@ margin-left: 7px;
     margin-top: 20px;
 }
 
+.middle-section .post-section .posts .post .body .comment span:hover{
+    text-decoration: underline;
+}
+
 
 
 .middle-section .post-section .posts .post .body .impretions {
     display: flex;
-    border-bottom: 1px solid lightgray;
+    padding: 12px 9px;
 }
 
 
@@ -972,22 +1026,39 @@ margin-left: 7px;
     display: flex;
     justify-content: space-between;
     margin: 5px 13px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 5px 0px;
+    margin-bottom: 15px;
 }
 
-.middle-section .post-section .posts .post .body .feedback .fb:hover{
-    background: lightgray;
+.middle-section .post-section .posts .post .body .feedback .fb a i {
+    color: gold!important;
+
 }
+
 
 .middle-section .post-section .posts .post .body .feedback .fb a{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
+    padding: 10px 40px;
+    border-radius: 5px;
 }
 
+.middle-section .post-section .posts .post .body .feedback .fb a:hover{
+    background: #f0f2f5;
+}
+
+
+
 .middle-section .post-section .posts .post .body .feedback .fb a img{
-    width: 26px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
+}
+
+.middle-section .post-section .posts .post .body .feedback .fb a div{
+    margin-left: 8px;
+    color: #606770;
 }
 
 .middle-section .post-section .posts .post .body .impretions .imp{
